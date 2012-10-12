@@ -199,8 +199,8 @@
     -->
     <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
         <span class="try">Resources</span>
-        <img src="images/net-tuts.png"/> 
         <img src="images/wp_book.png"/>
+        <img src="images/net-tuts.png"/> 
         <img src="images/smashing.png"/>
     </div>
 
@@ -213,7 +213,7 @@
         
     -->
     <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
-        <p> <span class="try">Before you begin:</span><br/>
+        <p> <span class="try">Before you begin:<img src="images/wplogo.png"/></span><br/>
      Always check to make sure you're running the most <strong>recent version of WordPress.</strong></p>
     </div>
 
@@ -234,6 +234,8 @@
        <p> <strong>Setting up and Naming:</strong>
  
        <p> The main plug-in file needs to be a .php file with a <strong>unique file or folder name.</strong></p>
+       <p>If the file name is not unique, it may conflict with other plugin-ins</p>
+       <p> Search WordPress.org and Google to make sure the name is unique</p>
       
     </div>
 
@@ -304,16 +306,50 @@
         </p>
     </div>
     <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
+       <ul>
+       <li>Allows developers to “hook in” and add stuff to the start or finish loading of WordPress</li>
+       <li>Triggered by specific events with a WordPress site is running or loading</li>
+       </ul>
+    </div>
+    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
+       <p>  add-action (‘<strong>hook-name</strong>’, ‘function-name’, X,Y);
+       <br/>hook-name: name of the hook you want to add the action to<br/>
+       
+       </p>
+    </div>
+     <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
+       <p>  add-action (‘hook-name’, ‘<strong>function-name</strong>’, X,Y);
+       <br/>function-name: is the name of the function you want WordPress to run
+       
+       </p>
+    </div>
+    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
+       <p>  add-action (‘hook-name’, ‘function-name’,<strong> X,Y</strong>);
+       <br/>X: priority argument (which defaults to 10) used to sort actions. The lower the number, the earlier it will get called. Helps make sure that something happens before your function is called. 
+Y: number of arguments that your function can accept (defaults to 1) 
+
+       </p>
+    </div>
+    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
+        <p>Filter Hooks!<br/>
+         add-filter(‘hook-name’, ‘function-name’, X,Y);
+         </p>
+    </div>
+    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
         <p>Filter Hooks!<br/>
          add-filter(‘hook-name’, ‘function-name’, X,Y);
          </p>
     </div>
      <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
-        <p>How to I remove the functionality of an action or filter hook?<br/>
-         remove_action (‘action-hook, ‘the-function)<br/>
-		  remove_filter (‘filter-hook’, the-function’)<br/>
+     <ul>
+       <li>functions that WordPress passes data through- use them to do stuff with data</li>
+       <li>the_title(), the_content(), the_exceprt() are all popular filter hooks</li>
+       <li>works the same way as actions- parameters are the same</li>
+    </ul>
+
          </p>
     </div>
+    
     <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
         <p>Page load life-cycle </p>
     </div>
@@ -333,16 +369,32 @@
      - include a support link in the settings page (if distributing the plugin)</p>
     </div>
      <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
+    <img src="images/yoast.jpg"/>
+    </div>
+    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
+    <a href="http://tubepress.org/documentation/overview/introduction" target="_blank"><img src="images/tubepress.jpg"/></a>
+    </div>
+    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
+    <a href="http://tubepress.org/documentation/overview/introduction" target="_blank"><img src="images/tubepress.jpg"/></a>
+    </div>
+      <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
+		<img src="images/google.jpg"/>
+    </div>
+     <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
      <p>Make it easy to use<br/>
      - template tags- spell out the tag and where they should place it <br/>
+     <img src="images/table.jpg"/>
      - streamline data input fields and add visual cues<br/>
-     - label everything that the user has to fill out.</p>
+     <img src="images/events.jpg"/>
+     - clearly label everything that the user has to fill out.</p>
      </div>
     <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
      <p>How will it integrate into various designs and situations?<br/>
-     - Think about how the plugin may be used on the page. (Example- flickr plugin).<br/>
+     - Think about how the plugin may be used on the page<br/>
      - Notfications<br/>
      - Layout</p>
+     <img src="images/shop1.jpg"/><br/>
+     <img src="images/shop2.jpg"/>
     </div>
     <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
      <p>working with existing plugins:<br/>

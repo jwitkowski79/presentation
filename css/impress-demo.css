@@ -257,14 +257,20 @@ a:focus {
 #title .try {
     font-size: 64px;
     position: absolute;
-    top: -0.5em;
-    left: 1.5em;
+    top: -.5em;
+    left: 4.8em;
+    
     
     -webkit-transform: translateZ(20px);
     -moz-transform:    translateZ(20px);
     -ms-transform:     translateZ(20px);
     -o-transform:      translateZ(20px);
     transform:         translateZ(20px);
+}
+
+#title img {
+	float:left;
+	
 }
 
 #title h1 {
@@ -280,6 +286,16 @@ a:focus {
 #title .footnote {
     font-size: 32px;
 }
+
+#its img{
+	position:relative;
+	top:20px;
+}
+
+#its strong{
+	color:#21759a;
+}
+
 
 /*
     Second step is nothing special, just a text with a link, so it doesn't need
