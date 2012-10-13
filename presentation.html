@@ -1,0 +1,215 @@
+<!doctype html>
+
+<html>
+	<head>
+		<meta charset="utf-8" />
+    	<meta name="viewport" content="width=1024" />
+    	<meta name="apple-mobile-web-app-capable" content="yes" />
+		
+		<title></title>
+
+		<link href="css/wp-presentation.css" rel="stylesheet" />
+    
+    	<link rel="shortcut icon" href="favicon.png" />
+    	<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+	</head>
+	<body class="impress-not-supported">
+
+		<div class="fallback-message">
+		    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+		    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+		</div>
+
+		<div id="impress">
+
+			<div class="step">
+				<q>Taking the Intimidation Out of WordPress Plugin Development</q>
+			</div>
+
+			<div class="step" data-x="0" data-y="0" data-scale="4">
+				<span class="try">Resources</span>
+		        <img src="images/wp_book.png" alt="WordPress" />
+		        <img src="images/net-tuts.png" alt="Net-Tuts" /> 
+		        <img src="images/smashing.png" alt="Smashing Magazine" />
+			</div>
+
+			<div class="step">
+				<p>
+					<span class="try">Before you begin:<img src="images/wplogo.png"/></span><br/>
+     				Always check to make sure you're running the most <strong>recent version of WordPress.</strong>
+     			</p>
+			</div>
+
+			<div class="step">
+				<p>Check the <strong>requirements</strong> of the plug-in.</p>
+			</div>
+
+			<div class="step">
+				<p> <strong>Setting up and Naming:</strong> </p>
+ 
+        		<p> The main plug-in file needs to be a .php file with a <strong>unique file or folder name.</strong></p>
+		       	<p>If the file name is not unique, it may conflict with other plugin-ins</p>
+		       	<p> Search WordPress.org and Google to make sure the name is unique</p>				
+			</div>
+
+			<div class="step">
+				<p><strong>Let's Get Started!</strong></p>
+			</div>
+
+			<div class="step">
+				<p><strong>Identifying Header:</strong><br/>
+		        Tells WordPress that this file is a plugin.<br/>
+		        Placed at the top of the page<br/>
+		        <!-- probably want to move this into a <pre> tag -->
+		        <pre>
+		        	/*
+					Plugin Name: Test Plugin<br/>
+					Version: 1.0<br/>
+					Description: Just a test plugin!<br/>
+					Author: Dan Rabb <br/>
+					Author URI: http://URI_of_plugin_author_website<br/>
+					Plugin URI: http://URI_of_plugin_descripion_and_updates<br/>
+					License: A slug describing license associated with the plugin (usually GPL2)
+					*/
+				</pre>
+		        </p>
+			</div>
+
+			<div class="step">
+				<p>What else do you need?</p>
+			</div>
+
+			<div class="step">
+				<p>
+					Action Hooks!<br/>
+		        	add-action ('hook-name', 'function-name', X,Y);
+		        </p>
+			</div>
+
+			<div class="step">
+				<ul>
+					<li>Allows developers to "hook in" and add stuff to the start or finish loading of WordPress</li>
+					<li>Triggered by specific events with a WordPress site is running or loading</li>
+				</ul>
+			</div>
+
+			<div class="step">
+				<p>
+					add-action ('<strong>hook-name</strong>', 'function-name', X,Y);
+					<br/>hook-name: name of the hook you want to add the action to<br/>
+				</p>
+			</div>
+
+			<div class="step">
+				<p>
+					add-action ('hook-name', '<strong>function-name</strong>', X,Y);
+					<br/>function-name: is the name of the function you want WordPress to run
+				</p>
+			</div>
+
+			<div class="step">
+				<p>add-action (‘hook-name’, ‘function-name’,<strong> X,Y</strong>);
+				<br/>X: priority argument (which defaults to 10) used to sort actions. The lower the number, the earlier it will get called. Helps make sure that something happens before your function is called. 
+				Y: number of arguments that your function can accept (defaults to 1) 
+
+				</p>
+			</div>
+
+			<div class="step">
+				<p>
+					Filter Hooks!<br/>
+					add-filter(‘hook-name’, ‘function-name’, X,Y);
+				</p>
+			</div>
+
+			<div class="step">
+				<p>Filter Hooks!<br/>
+				add-filter(‘hook-name’, ‘function-name’, X,Y);
+				</p>
+			</div>
+
+			<div class="step">
+				<ul>
+					<li>functions that WordPress passes data through- use them to do stuff with data</li>
+					<li>the_title(), the_content(), the_exceprt() are all popular filter hooks</li>
+					<li>works the same way as actions- parameters are the same</li>
+				</ul>
+			</div>
+
+			<div class="step">
+				<p>Page load life-cycle </p>
+			</div>
+
+			<div class="step">
+				<p>javascript (remember this needed to be in the footer)</p>
+			</div>
+
+			<div class="step">
+				<p>Designing</p>
+			</div>
+
+			<div class="step">
+				<p>UX Workflow<br/>
+     			How should this plugin work ideally for the end user?</p>
+			</div>
+
+			<div class="step">
+				<p>Make it as intuitive as possible<br/>
+				- include step by step instructions on how to setup and change the settings <br/>
+				- include a support link in the settings page (if distributing the plugin)</p>
+			</div>
+
+			<!-- there maybe a bunch of images in here? -->
+
+			<div class="step">
+				<p>
+					Make it easy to use<br/>
+     				- template tags- spell out the tag and where they should place it <br/>
+     				<img src="images/table.jpg"/>
+     				- streamline data input fields and add visual cues<br/>
+     				<img src="images/events.jpg"/>
+     				- clearly label everything that the user has to fill out.
+     			</p>
+			</div>
+
+			<div class="step">
+				<p>
+					How will it integrate into various designs and situations?<br/>
+					- Think about how the plugin may be used on the page<br/>
+					- Notfications<br/>
+					- Layout
+				</p>
+			    <img src="images/shop1.jpg"/><br/>
+			    <img src="images/shop2.jpg"/>
+			</div>
+
+			<div class="step">
+				<p>
+					working with existing plugins:<br/>
+					- Writing a plugin for an already existing plugin. Differences?<br/>
+				-	 How we created the plugin using jigoshop min order as an example (DEMO)<br/>
+				</p>
+			</div>
+		</div>
+
+		<script src="js/impress.min.js"></script>
+		<script>impress().init();</script>
+
+	</body>
+</html>
+
+<!--
+    
+    So to make a summary of all the possible attributes used to position presentation steps, we have:
+    
+    * `data-x`, `data-y`, `data-z` - they define the position of **the center** of step element on
+        the canvas in pixels; their default value is 0;
+    * `data-rotate-x`, `data-rotate-y`, 'data-rotate-z`, `data-rotate` - they define the rotation of
+        the element around given axis in degrees; their default value is 0; `data-rotate` and `data-rotate-z`
+        are exactly the same;
+    * `data-scale` - defines the scale of step element; default value is 1
+    
+    These values are used by impress.js in CSS transformation functions, so for more information consult
+    CSS transfrom docs: https://developer.mozilla.org/en/CSS/transform
+    
+-->
