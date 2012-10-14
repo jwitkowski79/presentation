@@ -8,7 +8,8 @@
 		
 		<title></title>
 
-		<link href="css/wp-presentation.css" rel="stylesheet" />
+		<link href="css/wp-presentation.css" rel="stylesheet" />		
+		<link href='http://fonts.googleapis.com/css?family=Carrois+Gothic+SC' rel='stylesheet' type='text/css'>
     
     	<link rel="shortcut icon" href="favicon.png" />
     	<link rel="apple-touch-icon" href="apple-touch-icon.png" />
@@ -22,79 +23,77 @@
 
 		<div id="impress">
 
-			<div id="title" class="step" data-x="0" data-y="0">
+			<div id="title" class="step" data-x="0" data-y="0" data-scale="3">
 				<q>Taking the Intimidation Out of WordPress Plugin Development</q>
 			</div>
 
-			<div id="resources" class="step" data-x="-1200" data-y="0" data-scale="4">
+			<div id="resources" class="step" data-x="0" data-y="3000" data-rotate="90" data-scale="4">
 				<span class="try">Resources</span>
 		        <img src="images/wp_book.png" alt="WordPress" />
 		        <img src="images/net-tuts.png" alt="Net-Tuts" /> 
 		        <img src="images/smashing.png" alt="Smashing Magazine" />
 			</div>
 
-			<div id="get-latest" class="step" data-x="-2400" data-y="0">
+			<div id="get-latest" class="step" data-x="3500" data-y="100" data-z="300">
 				<p>
 					<span class="try">Before you begin:<img src="images/wplogo.png"/></span><br/>
      				Always check to make sure you're running the most <strong>recent version of WordPress.</strong>
      			</p>
+     			<p>Search WordPress.org and Google to make sure someone has not already solved your problem</p>
 			</div>
 
-			<div id="check-requirements" class="step" data-x="-2400" data-y="-800">
-				<p>Check the <strong>requirements</strong> of the plug-in.</p>
-			</div>
-
-			<!-- start here updating x/y -->
-
-			<div id="filenames" class="step" data-x="-2400" data-y="-1600" data-scale="2">
-				<p> <strong>Setting up and Naming:</strong> </p>
- 
-        		<p>The main plug-in file needs to be a .php file with a <strong>unique file or folder name.</strong></p>
-		       	<p>If the file name is not unique, it may conflict with other plugin-ins</p>
-		       	<p>Search WordPress.org and Google to make sure the name is unique</p>				
-			</div>
-
-			<div id="get-started" class="step" data-x="-1200" data-y="-1600">
+			<div id="get-started" class="step" data-x="3500" data-y="1800" data-rotate="90" data-scale="3">
 				<p><strong>Let's Get Started!</strong></p>
 			</div>
 
-			<div id="plugin-header" class="step" data-x="-1200" data-y="-800">
-				<p><strong>Identifying Header:</strong><br/>
+			<div id="filenames" class="step" data-x="3800" data-y="-1600" data-scale="1">
+				<p> <strong>Naming Your Plugin</strong> </p>
+ 
+        		<p>The main plug-in file needs to be a .php file with a <strong>unique file or folder name.</strong></p>
+		       	<p>Make it descriptive!  Additionally, if the file name is not unique it will conflict with other plugin-ins.</p>
+			</div>
+
+			<div id="plugin-header" class="step" data-x="2800" data-y="-2600" data-scale="2">
+				<p><strong>Identifying Header</strong><br/>
 		        Tells WordPress that this file is a plugin.<br/>
-		        Placed at the top of the page<br/>
-		        <pre>
-		        	/*
-					Plugin Name: Test Plugin<br/>
-					Version: 1.0<br/>
-					Description: Just a test plugin!<br/>
-					Author: Dan Rabb <br/>
-					Author URI: http://URI_of_plugin_author_website<br/>
-					Plugin URI: http://URI_of_plugin_descripion_and_updates<br/>
-					License: A slug describing license associated with the plugin (usually GPL2)
-					*/
+		        Needs to be the first code (er, comment) in your PHP file.<br/>
+		        <pre>/*
+Plugin Name: Test Plugin<br/>
+Version: 1.0<br/>
+Description: Just a test plugin!<br/>
+Author: Dan Rabb <br/>
+Author URI: http://URI_of_plugin_author_website<br/>
+Plugin URI: http://URI_of_plugin_descripion_and_updates<br/>
+License: A slug describing license associated with the plugin (usually GPL2)
+*/
 				</pre>
 		        </p>
+			</div>
+
+			<div id="check-requirements" class="step" data-x="0" data-y="-2400" data-rotate="-90" data-scale="2">
+				<p>Check the <strong>requirements</strong> of the plug-in.</p>
 			</div>
 
 			<div id="what-else" class="step" data-x="0" data-y="-800">
 				<p>What else do you need?</p>
 			</div>
 
-			<div id="action-hook" class="step" data-x="-2400" data-y="-1600">
+			<div id="action-hook" class="step" data-x="1800" data-y="-1400" data-scale="2">
 				<p>
 					Action Hooks!<br/>
-		        	add-action ('hook-name', 'function-name', X,Y);
+		        	add-action ('hook-name', 'function-name', X,Y);<br />
+		        	<img src="images/hook.jpg" alt="Hook Hand" />
 		        </p>
 			</div>
 
-			<div id="action-hook-info" class="step" data-x="-2400" data-y="-1600">
+			<div id="action-hook-info" class="step" data-x="-1000" data-y="-1800">
 				<ul>
 					<li>Allows developers to "hook in" and add stuff to the start or finish loading of WordPress</li>
 					<li>Triggered by specific events with a WordPress site is running or loading</li>
 				</ul>
 			</div>
 
-			<div id="action-hook-example" class="step" data-x="-2400" data-y="-1600">
+			<div id="action-hook-example" class="step" data-x="-1400" data-y="-800">
 				<p>
 					add-action ('<strong>hook-name</strong>', 'function-name', X,Y);
 					<br/>hook-name: name of the hook you want to add the action to<br/>
@@ -108,7 +107,7 @@
 				</p>
 			</div>-->
 
-			<div id="action-hook-more-info" class="step">
+			<div id="action-hook-more-info" class="step" data-x="-4000" data-y="0" data-scale="4">
 				<p>add-action (‘hook-name’, ‘function-name’,<strong> X,Y</strong>);
 				<br/>X: priority argument (which defaults to 10) used to sort actions. The lower the number, the earlier it will get called. Helps make sure that something happens before your function is called. 
 				Y: number of arguments that your function can accept (defaults to 1) 
@@ -157,6 +156,8 @@
 					- include a support link in the settings page (if distributing the plugin)
 				</p>
 			</div>
+
+			<div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10"> </div>
 
 			<!-- there maybe a bunch of images in here? -->
 

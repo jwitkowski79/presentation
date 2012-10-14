@@ -1,5 +1,5 @@
 body {
-    background-color: #bbb;
+    background-color: #999;
 }
 
 .fallback-message {
@@ -42,4 +42,45 @@ body {
     opacity: 0;
 }
 
+.impress-enabled .step.past, .impress-enabled .step.future { opacity: .5 }
 .impress-enabled .step.active { opacity: 1 }
+
+#title q {
+    font-family: 'Carrois Gothic SC', sans-serif;
+    font-size:40pt;
+}
+
+#resources {
+
+}
+
+#get-latest {
+    font-size:36px;
+}
+
+#check-requirements {
+
+}
+
+#filenames {
+    font-size:38px;
+}
+
+#plugin-header {
+    font-size:36px;
+}
+
+#plugin-header p {
+    margin-bottom: 10px;
+}
+
+#plugin-header pre {
+    font-size:14px;
+    line-height: 16px;
+    margin:0;
+    padding:0;
+}
+
+#action-hook-more-info {
+    font-size:32px;
+}
