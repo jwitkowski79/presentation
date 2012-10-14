@@ -42,7 +42,7 @@ body {
     opacity: 0;
 }
 
-.impress-enabled .step.past, .impress-enabled .step.future { opacity: .5 }
+.impress-enabled .step.past, .impress-enabled .step.future { opacity: .15 }
 .impress-enabled .step.active { opacity: 1 }
 
 #title q {
