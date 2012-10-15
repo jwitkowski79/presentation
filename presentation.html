@@ -8,8 +8,9 @@
 		
 		<title></title>
 
-		<link href="css/wp-presentation.css" rel="stylesheet" />		
-		<link href='http://fonts.googleapis.com/css?family=Carrois+Gothic+SC' rel='stylesheet' type='text/css'>
+		<link href="css/wp-presentation.css" rel="stylesheet" />
+		<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700italic' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css'>
     
     	<link rel="shortcut icon" href="favicon.png" />
     	<link rel="apple-touch-icon" href="apple-touch-icon.png" />
@@ -27,12 +28,12 @@
 				<q>Taking the Intimidation Out of WordPress Plugin Development</q>
 			</div>
 
-			<div id="resources" class="step" data-x="0" data-y="3000" data-rotate="90" data-scale="4">
+			<!--<div id="resources" class="step" data-x="0" data-y="3000" data-rotate="90" data-scale="4">
 				<span class="try">Resources</span>
 		        <img src="images/wp_book.png" alt="WordPress" />
 		        <img src="images/net-tuts.png" alt="Net-Tuts" /> 
 		        <img src="images/smashing.png" alt="Smashing Magazine" />
-			</div>
+			</div>-->
 
 			<div id="get-latest" class="step" data-x="3500" data-y="100" data-z="300">
 				<p>
@@ -43,20 +44,21 @@
 			</div>
 
 			<div id="get-started" class="step" data-x="3500" data-y="1800" data-rotate="90" data-scale="3">
-				<p><strong>Let's Get Started!</strong></p>
+				<h1>Let's Get Started!</h1>
 			</div>
 
 			<div id="filenames" class="step" data-x="3800" data-y="-1600" data-scale="1">
-				<p> <strong>Naming Your Plugin</strong> </p>
+				<h2>Naming Your Plugin</h2>
  
         		<p>The main plug-in file needs to be a .php file with a <strong>unique file or folder name.</strong></p>
 		       	<p><strong>Make it descriptive!</strong>  Additionally, if the file name is not unique it will conflict with other plugin-ins.</p>
 			</div>
 
 			<div id="plugin-header" class="step" data-x="2800" data-y="-2600" data-scale="2">
-				<p><strong>Identifying Header</strong><br/>
+				<h2>Identifying Header</h2>
+
 		        Tells WordPress that this file is a plugin.<br/>
-		        Needs to be the first code (er, comment) in your PHP file.<br/>
+		        Needs to be the <strong>first code</strong> (er, comment) in your PHP file.<br/><br />
 		        <pre>/*
 Plugin Name: Test Plugin<br/>
 Version: 1.0<br/>
@@ -75,22 +77,23 @@ License: A slug describing license associated with the plugin (usually GPL2)
 			</div>
 
 			<div id="what-else" class="step" data-x="0" data-y="-800">
-				<p>What else do you need?</p>
+				<h1>What else do you need?</h1>
 			</div>
 
 			<div id="action-hook" class="step" data-x="1800" data-y="-1400" data-scale="2">
+				<h2>Action Hooks!</h2>
 				<p>
-					Action Hooks!<br/>
 		        	add-action ('hook-name', 'function-name', X,Y);<br />
 		        	<img src="images/hook.jpg" alt="Hook Hand" />
 		        </p>
 			</div>
 
-			<div id="action-hook-info" class="step" data-x="-1000" data-y="-1800">
-				<ul>
-					<li>Allows developers to "hook in" and add stuff to the start or finish loading of WordPress</li>
-					<li>Triggered by specific events with a WordPress site is running or loading</li>
-				</ul>
+			<div id="action-hook-info-1" class="step" data-x="-1000" data-y="-2100">
+				Allows developers to "hook in" and add stuff to the start or finish loading of WordPress
+			</div>
+			
+			<div id="action-hook-info-2" class="step" data-x="-1000" data-y="-1800">
+				Triggered by specific events with a WordPress site is running or loading
 			</div>
 
 			<div id="action-hook-example" class="step" data-x="-1400" data-y="-800">

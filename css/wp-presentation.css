@@ -2,6 +2,16 @@ body {
     background-color: #999;
 }
 
+h1 {
+    font-family: 'Droid Serif', serif;
+    font-size:72px;
+}
+
+h2 {
+    font-family: 'Droid Serif', serif;
+    font-size:54px;
+}
+
 .fallback-message {
     font-family: sans-serif;
     line-height: 1.3;
@@ -35,8 +45,8 @@ body {
     -o-box-sizing:      border-box;
     box-sizing:         border-box;
 
-    font-family: 'PT Serif', georgia, serif;
-    font-size: 48px;
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 46px;
     line-height: 1.5;
 
     opacity: 0;
