@@ -7,3 +7,11 @@ About
 =====
 
 Presentation for WordCamp Buffalo 10/20/12.  A simple HTML presentation using the impress.js library.
+
+TODO
+====
+
+- add a summary slide (thanks! questions?)
+- add a slide for considerations when dealing with another plugin
+- reintroduce the resources page
+- host this someplace
