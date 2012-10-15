@@ -25,7 +25,7 @@
 		<div id="impress">
 
 			<div id="title" class="step" data-x="0" data-y="0" data-scale="3">
-				<q>Taking the Intimidation Out of WordPress Plugin Development</q>
+				Taking the<span> Intimidation Out of <br/> <strong>WordPress Plugin Development</strong></span>
 			</div>
 
 			<!--<div id="resources" class="step" data-x="0" data-y="3000" data-rotate="90" data-scale="4">
@@ -37,10 +37,10 @@
 
 			<div id="get-latest" class="step" data-x="3500" data-y="100" data-z="300">
 				<p>
-					<span class="try">Before you begin:<img src="images/wplogo.png"/></span><br/>
+					<h3>Before you begin:<img src="images/wplogo.png"/></h3>
      				Always check to make sure you're running the most <strong>recent version of WordPress.</strong>
      			</p>
-     			<p>Search WordPress.org and Google to make sure someone has not already solved your problem.</p>
+     			<p>Search <strong>WordPress.org </strong>and <strong>Google</strong> to make sure someone has not already solved your problem.</p>
 			</div>
 
 			<div id="get-started" class="step" data-x="3500" data-y="1800" data-rotate="90" data-scale="3">
@@ -51,7 +51,7 @@
 				<h2>Naming Your Plugin</h2>
  
         		<p>The main plug-in file needs to be a .php file with a <strong>unique file or folder name.</strong></p>
-		       	<p><strong>Make it descriptive!</strong>  Additionally, if the file name is not unique it will conflict with other plugin-ins.</p>
+		       	<p><h4>Make it descriptive!</h4>  Additionally, if the file name is not unique it will conflict with other plugin-ins.</p>
 			</div>
 
 			<div id="plugin-header" class="step" data-x="2800" data-y="-2600" data-scale="2">
@@ -83,23 +83,23 @@ License: A slug describing license associated with the plugin (usually GPL2)
 			<div id="action-hook" class="step" data-x="1800" data-y="-1400" data-scale="2">
 				<h2>Action Hooks!</h2>
 				<p>
-		        	add-action ('hook-name', 'function-name', X,Y);<br />
+		        	<pre>add-action ('hook-name', 'function-name', X,Y);</pre>
 		        	<img src="images/hook.jpg" alt="Hook Hand" />
 		        </p>
 			</div>
 
 			<div id="action-hook-info-1" class="step" data-x="-1000" data-y="-2100">
-				Allows developers to "hook in" and add stuff to the start or finish loading of WordPress
+				Allows developers to <strong>"hook in"</strong> and add stuff to the start or finish loading of WordPress
 			</div>
 			
 			<div id="action-hook-info-2" class="step" data-x="-1000" data-y="-1800">
-				Triggered by specific events with a WordPress site is running or loading
+				Triggered by <strong>specific events</strong> when loading a WordPress site
 			</div>
 
 			<div id="action-hook-example" class="step" data-x="-1400" data-y="-800">
 				<p>
-					add-action ('<strong>hook-name</strong>', 'function-name', X,Y);
-					<br/>hook-name: name of the hook you want to add the action to<br/>
+					<pre>add-action ('<strong>hook-name</strong>', 'function-name', X,Y);</pre>
+					<strong>hook-name:</strong> name of the hook you want to add the action to<br/>
 				</p>
 			</div>
 
@@ -111,17 +111,17 @@ License: A slug describing license associated with the plugin (usually GPL2)
 			</div>-->
 
 			<div id="action-hook-more-info" class="step" data-x="-4000" data-y="0" data-scale="4">
-				<p>add-action (‘hook-name’, ‘function-name’,<strong> X,Y</strong>);
-				<br/>X: priority argument (which defaults to 10) used to sort actions. The lower the number, the earlier it will get called. Helps make sure that something happens before your function is called. 
-				Y: number of arguments that your function can accept (defaults to 1) 
+				<p><pre>add-action (‘hook-name’, ‘function-name’,<strong> X,Y</strong>);</pre>
+				<strong>X:</strong> priority argument (which defaults to 10) used to sort actions. The lower the number, the earlier it will get called. Helps make sure that something happens before your function is called. <br/><br/>
+				<strong>Y:</strong> number of arguments that your function can accept (defaults to 1) 
 
 				</p>
 			</div>
 
-			<div id="filter-hooks" class="step" data-x="-3400" data-y="1500" data-rotate="-90" data-scale="3">
+			<div id="filter-hooks" class="step" data-x="-3400" data-y="2000" data-rotate="-90" data-scale="3">
 				<p>
-					<strong>Filter Hooks!</strong><br/>
-					add-filter(‘hook-name’, ‘function-name’, X,Y);
+					<h2>Filter Hooks!</h2>
+					<pre>add-filter(‘hook-name’, ‘function-name’, X,Y);</pre>
 				</p>
 			</div>
 
@@ -134,7 +134,7 @@ License: A slug describing license associated with the plugin (usually GPL2)
 			</div>-->
 
 			<div id="filter-hook-1" class="step" data-x="-2400" data-y="3800">
-				functions that WordPress passes data through - use them to do stuff with data
+				functions that WordPress <strong>passes data through</strong> - use them to do stuff with data
 			</div>
 
 			<div id="filter-hook-2" class="step" data-x="-2400" data-y="4100">
@@ -146,31 +146,36 @@ License: A slug describing license associated with the plugin (usually GPL2)
 			</div>
 
 			<div id="page-load" class="step" data-x="-1300" data-y="1000" data-scale="4">
-				<p>Page load life-cycle </p>
+				<h2>Page load life-cycle </h2>
 			</div>
 
 			<div id="javascript-info" class="step" data-x="4800" data-y="1600" data-rotate="45" data-scale="2">
-				<p>javascript (remember this needed to be in the footer)</p>
+				<h2>javascript (remember this needed to be in the footer)</h2>
 			</div>
 
 			<div id="designing" class="step" data-x="4800" data-y="2000" data-rotate="-45" data-scale="3">
-				<p>Designing</p>
+				<h1>Designing</h1>
 			</div>
 
 			<div id="ux-workflow" class="step" data-x="-2400" data-y="-1600">
 				<p>
-					UX Workflow<br/>
-     				How should this plugin work ideally for the end user?
+					<h2>UX Workflow</h2>
+     				How should this plugin work ideally for the <strong>end user?</strong>
      			</p>
 			</div>
 
-			<div id="design-considerations" class="step" data-x="-3000" data-y="-1200">
-				<p>
-					Make it as intuitive as possible<br/>
-					- include step by step instructions on how to setup and change the settings <br/>
-					- include a support link in the settings page (if distributing the plugin)
-				</p>
+			<div id="design-considerations1" class="step" data-x="-3000" data-y="-1300">
+					Make it as <strong>intuitive as possible</strong>
 			</div>
+			
+			<div id="design-considerations2" class="step" data-x="-3000" data-y="-1150">
+					Include step by step instructions on how to setup and change the settings 
+			</div>
+
+			<div id="design-considerations3" class="step" data-x="-3000" data-y="-970">
+					Include a support link in the settings page (if distributing the plugin)
+			</div>
+			
 
 			<div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10"> </div>
 

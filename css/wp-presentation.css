@@ -12,6 +12,19 @@ h2 {
     font-size:54px;
 }
 
+h3{
+    font-family: 'Droid Serif', serif;
+    margin:0px 0px 30px 0px;
+    padding:0px;
+}
+
+h4{
+    font-family: 'Droid Serif', serif;
+    margin:0px 0px 0px 0px;
+    padding:0px;
+    font-size:38px;
+}
+
 .fallback-message {
     font-family: sans-serif;
     line-height: 1.3;
@@ -55,9 +68,19 @@ h2 {
 .impress-enabled .step.past, .impress-enabled .step.future { opacity: .15 }
 .impress-enabled .step.active { opacity: 1 }
 
-#title q {
-    font-family: 'Carrois Gothic SC', sans-serif;
-    font-size:40pt;
+#title  {
+    font-family: 'Droid Serif', serif;
+    font-size: 45px;
+    line-height: 65px;
+}
+
+#title span{
+    line-height:75px !important;
+}
+
+#title span strong{
+    color:#0c5d80;
+    font-size: 70px;
 }
 
 #resources {
@@ -66,6 +89,15 @@ h2 {
 
 #get-latest {
     font-size:36px;
+}
+
+#get-latest img {
+    position: relative;
+    top:15px;
+}
+
+strong{
+    color:#0c5d80;
 }
 
 #check-requirements {
@@ -93,4 +125,9 @@ h2 {
 
 #action-hook-more-info {
     font-size:32px;
+}
+
+#action-hook-example pre, #action-hook pre, #filter-hooks pre, #action-hook-more-info pre{
+    font-size:30px !important;
+
 }
