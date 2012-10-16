@@ -127,6 +127,10 @@ strong{
     font-size:32px;
 }
 
-#action-hook-example pre, #action-hook pre, #filter-hooks pre, #action-hook-more-info pre{
+#resources img{
+    float:left;
+}
+
+#action-hook-example pre, #action-hook pre, #filter-hooks pre, #action-hook-more-info pre, #action-hook-info-3 pre{
     font-size:30px !important;
 }
