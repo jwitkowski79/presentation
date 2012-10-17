@@ -2,6 +2,14 @@ body {
     background-color: #999;
 }
 
+a {
+    color:#0c5d80;
+}
+
+a:hover {
+    text-decoration:none;
+}
+
 h1 {
     font-family: 'Droid Serif', serif;
     font-size:72px;
@@ -68,17 +76,17 @@ h4{
 .impress-enabled .step.past, .impress-enabled .step.future { opacity: .15 }
 .impress-enabled .step.active { opacity: 1 }
 
-#title  {
+#title {
     font-family: 'Droid Serif', serif;
     font-size: 45px;
     line-height: 65px;
 }
 
-#title span{
+#title span {
     line-height:75px !important;
 }
 
-#title span strong{
+#title span strong {
     color:#0c5d80;
     font-size: 70px;
 }
@@ -131,6 +139,10 @@ strong{
     float:left;
 }
 
-#action-hook-example pre, #action-hook pre, #filter-hooks pre, #action-hook-more-info pre, #action-hook-info-3 pre{
+#action-hook-example pre, #action-hook pre, #filter-hooks pre, #action-hook-more-info pre, #action-hook-example-2 pre{
     font-size:30px !important;
+}
+
+#qa-questions {
+    width:1400px;
 }

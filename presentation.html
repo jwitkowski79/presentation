@@ -68,6 +68,7 @@ License: A slug describing license associated with the plugin (usually GPL2)
 
 			<div id="check-requirements" class="step" data-x="0" data-y="-2400" data-rotate="-90" data-scale="2">
 				<p>Check the <strong>requirements</strong> of the plug-in.</p>
+				Verify that WordPress is up to snuff, and if applicable a dependent plugin is installed.
 			</div>
 
 			<div id="what-else" class="step" data-x="0" data-y="-800">
@@ -92,27 +93,28 @@ License: A slug describing license associated with the plugin (usually GPL2)
 
 			<div id="action-hook-example" class="step" data-x="-1400" data-y="-800">
 				<p>
-					<pre>add-action ('<strong>hook-name</strong>', 'function-name', X,Y);</pre>
-					<strong>hook-name:</strong> name of the hook you want to add the action to<br/>
+					<pre>add-action('<strong>hook-name</strong>', 'function-name', X,Y);</pre>
+					<strong>hook-name:</strong> name of the hook you want to add the action to
 				</p>
 			</div>
 
-			<div id="action-hook-info-3" class="step" data-x="-2000" data-y="-2000">
+			<div id="action-hook-example-2" class="step" data-x="-2300" data-y="-2100">
 				<p>
-					<pre>add-action ('hook-name', '<strong>function-name</strong>', X,Y);</pre>
-					<br/><strong>function-name:</strong> is the name of the function you want WordPress to run
+					<pre>add-action('hook-name', '<strong>function-name</strong>', X,Y);</pre>
+					<strong>function-name:</strong> name of the function you want WordPress to call
 				</p>
 			</div>
 
 			<div id="action-hook-more-info" class="step" data-x="-4000" data-y="0" data-scale="4">
-				<p><pre>add-action (‘hook-name’, ‘function-name’,<strong> X,Y</strong>);</pre>
-				<strong>X:</strong> priority argument (which defaults to 10) used to sort actions. The lower the number, the earlier it will get called. Helps make sure that something happens before your function is called. <br/><br/>
-				<strong>Y:</strong> number of arguments that your function can accept (defaults to 1) 
-
-				</p>
+				lets to a full circle example of an action hook here...
+				<!--<p>
+					<pre>add-action (‘hook-name’, ‘function-name’,<strong> X,Y</strong>);</pre>
+					<strong>X:</strong> priority argument (which defaults to 10) used to sort actions. The lower the number, the earlier it will get called. Helps make sure that something happens before your function is called. <br/><br/>
+					<strong>Y:</strong> number of arguments that your function can accept (defaults to 1)
+				</p>-->
 			</div>
 
-			<div id="filter-hooks" class="step" data-x="-3400" data-y="2000" data-rotate="-90" data-scale="3">
+			<div id="filter-hooks" class="step" data-x="-3000" data-y="2400" data-rotate="-90" data-scale="2">
 				<p>
 					<h2>Filter Hooks!</h2>
 					<pre>add-filter(‘hook-name’, ‘function-name’, X,Y);</pre>
@@ -136,11 +138,11 @@ License: A slug describing license associated with the plugin (usually GPL2)
 			</div>
 
 			<div id="filter-hook-3" class="step" data-x="-2400" data-y="4400">
-				works the same way as actions - parameters are the same
+				filters work the same as actions - setup code is the same
 			</div>
 
 			<div id="page-load" class="step" data-x="-1300" data-y="1000" data-scale="4">
-				<h2>Page load life-cycle </h2>
+				<h2>Page load life-cycle</h2>
 			</div>
 
 			<div id="javascript-info" class="step" data-x="4800" data-y="1600" data-rotate="45" data-scale="2">
@@ -212,18 +214,29 @@ License: A slug describing license associated with the plugin (usually GPL2)
 			    <img src="images/shop2.jpg"/>
 			</div>
 			
-			<div id="jigoshop" class="step" data-x="2000" data-y="3000" >
-				<h2>Jigoshop Min Quantity Plug-in Review & Demo</h2>
-			</div>	
-
 			<div id="resources" class="step" data-x="500" data-y="3000" data-rotate="90" data-scale="4">
 				<h2>Resources</h2>
-		        <img src="images/wp_book.png" alt="WordPress" />
-		        <img src="images/net-tuts.png" alt="Net-Tuts" /> 
-		        <img src="images/smashing.png" alt="Smashing Magazine" />
+		        <a href="http://www.prelovac.com/vladimir/wordpress-plugin-development-book" target="_blank">
+		        		<img src="images/wp_book.png" alt="WordPress" />
+	        	</a>
+	        	<a href="http://wp.tutsplus.com/category/tutorials/plugins/" target="_blank">
+		        	<img src="images/net-tuts.png" alt="Net-Tuts" />
+	        	</a>
+		        <a href="http://wp.smashingmagazine.com/" target="_blank">
+		        	<img src="images/smashing.png" alt="Smashing Magazine" />
+		    	</a>
 			</div>
 
-			<div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10"> </div>
+			<div id="plugin-demo" class="step" data-x="2000" data-y="3000">
+				<h2>Plug-in Review &amp; Demo</h2>
+			</div>
+
+			<div id="a-questions" class="step" data-x="2000" data-y="3500">
+				<h2>QA and Discussion</h2>
+				<a href="http://www.jenwitkowski.com/wp-plugin-talk" target="_blank">jenwitkowski.com/wp-plugin-talk</a>
+			</div>
+
+			<div id="overview" class="step" data-x="200" data-y="400" data-scale="10"> </div>
 
 			<!-- <div id="" class="step">
 				<p>
