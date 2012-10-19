@@ -107,13 +107,12 @@ License: A slug describing license associated with the plugin (usually GPL2)
 
 			<div id="action-hook-more-info" class="step" data-x="-4000" data-y="0" data-scale="2">
 				<strong>Real world example</strong> of setting an action hook:
-				<pre>
-add_action('wp_footer', 'min_quantity_javascript');
+				<pre>add_action('wp_footer', 'min_quantity_javascript');
 
 function min_quantity_javascript() {
 	/* echo out some javascript ... */
-}
-				</pre>
+}</pre>
+				<p>Pro-tip: if your plugin requires javascript, make sure you add an action hook for <strong>wp_footer</strong></p>
 			</div>
 
 			<div id="filter-hooks" class="step" data-x="-3000" data-y="2400" data-rotate="-90" data-scale="2">
@@ -135,13 +134,17 @@ function min_quantity_javascript() {
 				Filters work the same as actions - setup code is the same
 			</div>
 
-			<div id="page-load" class="step" data-x="-1300" data-y="1000" data-scale="4">
+			<<div id="page-load" class="step" data-x="4800" data-y="1600" data-rotate="45" data-scale="2">
 				<h2>Page load life-cycle</h2>
+				<a href="http://tommcfarlin.s3.amazonaws.com/wp-content/uploads/2012/08/wordpress-core-load-lifecycle.png" target="_blank">
+					put page load life cycle shot here
+
+				</a>
 			</div>
 
-			<div id="javascript-info" class="step" data-x="4800" data-y="1600" data-rotate="45" data-scale="2">
-				<h2>javascript (remember this needed to be in the footer)</h2>
-			</div>
+			<!--<div id="javascript-info" class="step" data-x="4800" data-y="1600" data-rotate="45" data-scale="2">
+				<h2>javascript info</h2>
+			</div>-->
 
 			<div id="designing" class="step" data-x="4800" data-y="2000" data-rotate="-45" data-scale="3">
 				<h1>Designing</h1>

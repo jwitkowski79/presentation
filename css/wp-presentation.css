@@ -148,6 +148,14 @@ strong{
     font-size:30px !important;
 }
 
+#action-hook-more-info p {
+    font-size:28px;
+}
+
+#action-hook-more-info pre {
+    padding-bottom:5px;
+}
+
 #qa-questions {
     width:1400px;
 }
