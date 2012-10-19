@@ -4,6 +4,7 @@ body {
 
 a {
     color:#0c5d80;
+    outline:none;
 }
 
 a:hover {
@@ -139,7 +140,11 @@ strong{
     float:left;
 }
 
-#action-hook-example pre, #action-hook pre, #filter-hooks pre, #action-hook-more-info pre, #action-hook-example-2 pre{
+#action-hook-example pre, 
+#action-hook pre, 
+#filter-hooks pre, 
+#action-hook-more-info pre, 
+#action-hook-example-2 pre {
     font-size:30px !important;
 }
 
